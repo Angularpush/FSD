@@ -1,0 +1,23 @@
+.card {
+    border: 2px solid rgb(28, 22, 22);
+    height: 300px;
+    width: 300px;
+    background-color: rgb(62, 62, 125);
+    
+}
+#shop{
+    text-align: center;
+    color: rgb(138, 115, 87);
+}
+.value{
+    text-align: left;
+    color: rgb(190, 206, 206);
+}
+button{
+    align-self: center;
+}
+.card1{
+    border: 2px solid black;
+    height: 100px;
+    height: auto;
+}
