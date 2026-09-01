@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment2.js">
+    <title>Password Checking</title>
+</head>
+<body>
+    <script>
+        function check(a, b, c, d) {
+                return a === b && c === d;
+            }
+            function details(name, password, clbk) {
+                const user_pass = "_Pu17_shkar";
+                const user_name = "Pushkar";
+
+                let checking = clbk(name, user_name, password, user_pass);
+
+                if (checking) {
+                    document.write("Hello World!");
+                } else {
+                    document.write("Your password is incorrect");
+                }
+            }
+            function login() {
+                const name = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+                details(name, password, check)
+            }
+    </script>
+    <input type="text" id="username" placeholder="Enter Username">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+</body>
+</html>
