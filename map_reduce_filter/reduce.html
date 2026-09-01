@@ -11,8 +11,9 @@
     <script>
         const num = [11, 22, 32, 41, 5, 62, 72, 81, 9];
         const even = num.filter((i) => (i % 2 == 0));
-        const square = even.map((i)=>(i*i))
-        console.log("num =", num, "\nEven number is =", even,"\nsquare of number is =",square)
+        const square = even.map((i) => (i * i));
+        const sum = square.reduce((i,sum)=>(i+sum));
+        console.log("num =", num, "\nEven number is =", even, "\nsquare of number is =", square,"\nSum of Square is = ",sum);
 
     </script>
 </body>
