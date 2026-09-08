@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function buynow(){
+            document.getElementById("buynow").innerHTML=`
+            <div class="buynow">
+                
+            `
+        }
+    </script>
+    <style>
+        .card{
+            margin-left: 600px;
+            margin-top: 100px;
+            padding: 20px;
+            border: 2px solid black;
+            width: 800px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(20, 19, 19);
+            gap: 5px;
+        }
+        .system{
+            display: flex;
+            justify-content: space-around;
+        }
+        img{
+            width: 150px;
+            border-radius: 100%;
+            border: 1px solid black;
+        }
+        legend{
+            font-size:7cap;
+            color: rgb(223, 191, 157);
+            font-family:'Times New Roman', Times, serif;
+        }
+        .user{
+            border: 3px solid purple;
+            width: 750px;
+            height: 60px;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        h1{
+            font-size:5cap;
+        }
+        label{
+            font-size: x-large;
+            color:rgb(130, 199, 145);
+        }
+        select{
+            width: 100px;
+            padding: 3px;
+            font-size: small;
+        }
+    </style>
+    <div class="card">
+        <div class="system">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf7gz6GXczZnLoPt1OlTZpq4ggdVCBlx1X6TYS8C52Eyl9t6XjiXgjNDvn&s=10"
+                alt="Bus">
+            <legend>Bus Booking System</legend>
+        </div>
+        <div class="user">
+            <h1>User Information</h1>
+        </div>
+        <div>
+            <label for="user_name">User Name</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="user_age">User Age</label>
+            <input type="number">
+        </div>
+        <div>
+            <label for="user_aadharno">Aadhar no</label>
+            <input type="number">
+        </div>
+        <div>
+            <label for="city">City</label>
+            <select name="city">
+                <option>Ghaziabad</option>
+                <option>New Delhi</option>
+                <option>Meerut</option>
+                <option>Etawah</option>
+            </select>
+        </div>
+        <div>
+            <label for="jordate">Journey Date</label>
+            <input type="date">
+        </div>
+        <div class="user">
+            <h1>Bus Information</h1>
+        </div>
+        <div>
+            <input type="radio">
+            <label for="Acbus">AC Bus ₹2000/-</label>
+            <br>
+            <input type="radio">
+            <label for="nacbus">Non AC Bus ₹1500/-</label>
+        </div>
+        <div>
+            <label for="seets">Select Your Seets</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div><center><button onclick="buynow()">Buy Now</button></center></div>
+        <div id="buynow"></div>
+    </div>
+</body>
+</html>
